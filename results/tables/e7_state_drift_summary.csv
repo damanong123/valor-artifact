@@ -1,0 +1,5 @@
+condition,trials,expected_permit_rate,observed_permit_rate,abort_rate,nonce_resolved_rate,conservation_rate,lifecycle_correct_rate,correct_rate
+stable,500,1.0,1.0,0.0,1.0,1.0,1.0,1.0
+lower_effect,500,1.0,1.0,0.0,1.0,1.0,1.0,1.0
+higher_effect,500,0.0,0.0,1.0,1.0,1.0,1.0,1.0
+hard_guard_failure,500,0.0,0.0,1.0,1.0,1.0,1.0,1.0

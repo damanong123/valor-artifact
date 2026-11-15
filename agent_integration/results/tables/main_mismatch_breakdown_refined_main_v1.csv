@@ -1,0 +1,5 @@
+classification,count,fraction
+planner_never_reached_authorization_boundary,16,0.5333333333333333
+planner_premature_finish_or_wrong_action,10,0.3333333333333333
+planner_loop_or_nonconvergence,3,0.1
+planner_failed_after_authorization_denial,1,0.03333333333333333

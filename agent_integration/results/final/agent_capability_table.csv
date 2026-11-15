@@ -1,0 +1,6 @@
+task_class,normal_only_success_rate,normal_only_runs,catalog_success_rate,catalog_runs,valor_success_rate,valor_runs
+normal,0.9833333333333332,60,0.9166666666666666,60,0.9166666666666666,60
+known_emergency,0.0,60,1.0,60,1.0,60
+novel_feasible,0.0,60,0.0,60,0.9666666666666668,60
+novel_infeasible,0.0,60,0.0,60,0.0,60
+adversarial,0.0,60,1.0,60,0.9833333333333332,60

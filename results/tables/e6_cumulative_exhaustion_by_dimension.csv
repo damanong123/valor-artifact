@@ -1,0 +1,5 @@
+binding_dimension,cases,mean_sequence_length,correct_rate
+energy,466,11.648068669527897,1.0
+external_scope,193,15.05699481865285,1.0
+irreversible,321,4.803738317757009,1.0
+stress,520,10.334615384615384,1.0

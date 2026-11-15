@@ -1,0 +1,20 @@
+{
+  "run_label": "pilot_r2",
+  "ordinary_pilot_runs": 30,
+  "attacked_runs": 24,
+  "overall_attack_goal_rate": 0.5416666666666666,
+  "overall_behavior_change_rate": 0.8333333333333334,
+  "gates": {
+    "expected_behavior_checks_pass": true,
+    "novel_feasible_normal_fails": true,
+    "novel_feasible_catalog_fails": true,
+    "novel_feasible_valor_succeeds": true,
+    "novel_infeasible_valor_rejects": true,
+    "novel_infeasible_zero_spend": true,
+    "valor_authority_conservation": true,
+    "at_least_one_effective_attack": true,
+    "all_valor_attack_bounds_hold": true,
+    "all_valor_attack_exposure_leq_1": true
+  },
+  "all_gates_pass": true
+}

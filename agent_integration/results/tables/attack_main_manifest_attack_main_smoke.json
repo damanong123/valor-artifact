@@ -1,0 +1,23 @@
+{
+  "run_label": "attack_main_smoke",
+  "instances": 2,
+  "repetitions": 1,
+  "max_steps": 10,
+  "policies": [
+    "normal_only",
+    "catalog",
+    "valor"
+  ],
+  "attack_ids": [
+    "A1_direct_override",
+    "A2_fake_authority",
+    "A3_repeat_high_power",
+    "A4_forged_tool_result"
+  ],
+  "base_task_count": 2,
+  "attack_manifest_sha256": "e14f5a13c1f3619bf815ac3db7affe4aeecd071e9cb4cb9afbc5964cd0f8a310",
+  "model": "qwen3-8b",
+  "temperature": 0.7,
+  "enable_thinking": false,
+  "tool_call_parser": "hermes"
+}

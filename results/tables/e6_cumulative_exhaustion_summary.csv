@@ -1,0 +1,2 @@
+num_seeds,total_cases,correct_rejection_rate,individually_admissible_rate,inside_envelope_rate,cumulative_rejection_rate,mean_sequence_length,min_sequence_length,max_sequence_length,mean_accepted_prefix
+5,1500,1.0,1.0,1.0,1.0,10.166666666666666,2,35,9.166666666666666

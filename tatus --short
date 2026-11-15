@@ -1,0 +1,178 @@
+.gitignore:39: trailing whitespace.
+[32m+[m[32mThumbs.db[m[41m[m
+README.md:145: trailing whitespace.
+[32m+[m[41m[m
+README.md:146: trailing whitespace.
+[32m+[m[41m[m
+README.md:145: new blank line at EOF.
+agent_integration/agent.py:1: trailing whitespace.
+[32m+[m[32mfrom __future__ import annotations[m[41m[m
+agent_integration/agent.py:2: trailing whitespace.
+[32m+[m[41m[m
+agent_integration/agent.py:3: trailing whitespace.
+[32m+[m[32mimport json[m[41m[m
+agent_integration/agent.py:4: trailing whitespace.
+[32m+[m[32mfrom dataclasses import dataclass[m[41m[m
+agent_integration/agent.py:5: trailing whitespace.
+[32m+[m[32mfrom typing import Any[m[41m[m
+agent_integration/agent.py:6: trailing whitespace.
+[32m+[m[41m[m
+agent_integration/agent.py:7: trailing whitespace.
+[32m+[m[32mfrom openai import OpenAI[m[41m[m
+agent_integration/agent.py:8: trailing whitespace.
+[32m+[m[41m[m
+agent_integration/agent.py:9: trailing whitespace.
+[32m+[m[41m[m
+agent_integration/agent.py:10: trailing whitespace.
+[32m+[m[32m# ============================================================[m[41m[m
+agent_integration/agent.py:11: trailing whitespace.
+[32m+[m[32m# Data models[m[41m[m
+agent_integration/agent.py:12: trailing whitespace.
+[32m+[m[32m# ============================================================[m[41m[m
+agent_integration/agent.py:13: trailing whitespace.
+[32m+[m[41m[m
+agent_integration/agent.py:14: trailing whitespace.
+[32m+[m[32m@dataclass(frozen=True)[m[41m[m
+agent_integration/agent.py:15: trailing whitespace.
+[32m+[m[32mclass ToolProposal:[m[41m[m
+agent_integration/agent.py:16: trailing whitespace.
+[32m+[m[32m    """[m[41m[m
+agent_integration/agent.py:17: trailing whitespace.
+[32m+[m[32m    Exact tool call proposed by the LLM.[m[41m[m
+agent_integration/agent.py:18: trailing whitespace.
+[32m+[m[41m[m
+agent_integration/agent.py:19: trailing whitespace.
+[32m+[m[32m    This is only a proposal.[m[41m[m
+agent_integration/agent.py:20: trailing whitespace.
+[32m+[m[32m    It is NOT an authorization.[m[41m[m
+agent_integration/agent.py:21: trailing whitespace.
+[32m+[m[32m    """[m[41m[m
+agent_integration/agent.py:22: trailing whitespace.
+[32m+[m[41m[m
+agent_integration/agent.py:23: trailing whitespace.
+[32m+[m[32m    call_id: str[m[41m[m
+agent_integration/agent.py:24: trailing whitespace.
+[32m+[m[32m    tool_name: str[m[41m[m
+agent_integration/agent.py:25: trailing whitespace.
+[32m+[m[32m    arguments: dict[str, Any][m[41m[m
+agent_integration/agent.py:26: trailing whitespace.
+[32m+[m[41m[m
+agent_integration/agent.py:27: trailing whitespace.
+[32m+[m[41m[m
+agent_integration/agent.py:28: trailing whitespace.
+[32m+[m[32m@dataclass(frozen=True)[m[41m[m
+agent_integration/agent.py:29: trailing whitespace.
+[32m+[m[32mclass AgentDecision:[m[41m[m
+agent_integration/agent.py:30: trailing whitespace.
+[32m+[m[32m    """[m[41m[m
+agent_integration/agent.py:31: trailing whitespace.
+[32m+[m[32m    Result of one LLM planning turn.[m[41m[m
+agent_integration/agent.py:32: trailing whitespace.
+[32m+[m[41m[m
+agent_integration/agent.py:33: trailing whitespace.
+[32m+[m[32m    assistant_message:[m[41m[m
+agent_integration/agent.py:34: trailing whitespace.
+[32m+[m[32m        Exact OpenAI-compatible assistant message that can be[m[41m[m
+agent_integration/agent.py:35: trailing whitespace.
+[32m+[m[32m        appended to the conversation before tool results.[m[41m[m
+agent_integration/agent.py:36: trailing whitespace.
+[32m+[m[32m    """[m[41m[m
+agent_integration/agent.py:37: trailing whitespace.
+[32m+[m[41m[m
+agent_integration/agent.py:38: trailing whitespace.
+[32m+[m[32m    content: str | None[m[41m[m
+agent_integration/agent.py:39: trailing whitespace.
+[32m+[m[41m[m
+agent_integration/agent.py:40: trailing whitespace.
+[32m+[m[32m    tool_proposals: tuple[[m[41m[m
+agent_integration/agent.py:41: trailing whitespace.
+[32m+[m[32m        ToolProposal,[m[41m[m
+agent_integration/agent.py:42: trailing whitespace.
+[32m+[m[32m        ...[m[41m[m
+agent_integration/agent.py:43: trailing whitespace.
+[32m+[m[32m    ][m[41m[m
+agent_integration/agent.py:44: trailing whitespace.
+[32m+[m[41m[m
+agent_integration/agent.py:45: trailing whitespace.
+[32m+[m[32m    finish_reason: str | None[m[41m[m
+agent_integration/agent.py:46: trailing whitespace.
+[32m+[m[41m[m
+agent_integration/agent.py:47: trailing whitespace.
+[32m+[m[32m    assistant_message: dict[str, Any][m[41m[m
+agent_integration/agent.py:48: trailing whitespace.
+[32m+[m[41m[m
+agent_integration/agent.py:49: trailing whitespace.
+[32m+[m[41m[m
+agent_integration/agent.py:50: trailing whitespace.
+[32m+[m[32m# ============================================================[m[41m[m
+agent_integration/agent.py:51: trailing whitespace.
+[32m+[m[32m# Errors[m[41m[m
+agent_integration/agent.py:52: trailing whitespace.
+[32m+[m[32m# ============================================================[m[41m[m
+agent_integration/agent.py:53: trailing whitespace.
+[32m+[m[41m[m
+agent_integration/agent.py:54: trailing whitespace.
+[32m+[m[32mclass AgentError(RuntimeError):[m[41m[m
+agent_integration/agent.py:55: trailing whitespace.
+[32m+[m[32m    pass[m[41m[m
+agent_integration/agent.py:56: trailing whitespace.
+[32m+[m[41m[m
+agent_integration/agent.py:57: trailing whitespace.
+[32m+[m[41m[m
+agent_integration/agent.py:58: trailing whitespace.
+[32m+[m[32mclass AgentConnectionError([m[41m[m
+agent_integration/agent.py:59: trailing whitespace.
+[32m+[m[32m    AgentError[m[41m[m
+agent_integration/agent.py:60: trailing whitespace.
+[32m+[m[32m):[m[41m[m
+agent_integration/agent.py:61: trailing whitespace.
+[32m+[m[32m    pass[m[41m[m
+agent_integration/agent.py:62: trailing whitespace.
+[32m+[m[41m[m
+agent_integration/agent.py:63: trailing whitespace.
+[32m+[m[41m[m
+agent_integration/agent.py:64: trailing whitespace.
+[32m+[m[32mclass AgentToolParseError([m[41m[m
+agent_integration/agent.py:65: trailing whitespace.
+[32m+[m[32m    AgentError[m[41m[m
+agent_integration/agent.py:66: trailing whitespace.
+[32m+[m[32m):[m[41m[m
+agent_integration/agent.py:67: trailing whitespace.
+[32m+[m[32m    pass[m[41m[m
+agent_integration/agent.py:68: trailing whitespace.
+[32m+[m[41m[m
+agent_integration/agent.py:69: trailing whitespace.
+[32m+[m[41m[m
+agent_integration/agent.py:70: trailing whitespace.
+[32m+[m[32m# ============================================================[m[41m[m
+agent_integration/agent.py:71: trailing whitespace.
+[32m+[m[32m# Local LLM Agent[m[41m[m
+agent_integration/agent.py:72: trailing whitespace.
+[32m+[m[32m# ============================================================[m[41m[m
+agent_integration/agent.py:73: trailing whitespace.
+[32m+[m[41m[m
+agent_integration/agent.py:74: trailing whitespace.
+[32m+[m[32mclass LocalLLMAgent:[m[41m[m
+agent_integration/agent.py:75: trailing whitespace.
+[32m+[m[32m    """[m[41m[m
+agent_integration/agent.py:76: trailing whitespace.
+[32m+[m[32m    Real LLM planner backed by local vLLM.[m[41m[m
+agent_integration/agent.py:77: trailing whitespace.
+[32m+[m[41m[m
+agent_integration/agent.py:78: trailing whitespace.
+[32m+[m[32m    Security boundary:[m[41m[m
+agent_integration/agent.py:79: trailing whitespace.
+[32m+[m[41m[m
+agent_integration/agent.py:80: trailing whitespace.
+[32m+[m[32m        LLM proposes[m[41m[m
+agent_integration/agent.py:81: trailing whitespace.
+[32m+[m[32m              ↓[m[41m[m
+agent_integration/agent.py:82: trailing whitespace.
+[32m+[m[32m        ToolProposal[m[41m[m
+agent_integration/agent.py:83: trailing whitespace.
+[32m+[m[41m[m
+agent_integration/agent.py:84: trailing whitespace.
+[32m+[m[32m    The Agent does NOT:[m[41m[m
+agent_integration/agent.py:85: trailing whitespace.
+[32m+[m[41m[m
+agent_integration/agent.py:86: trailing w

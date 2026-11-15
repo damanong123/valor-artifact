@@ -1,0 +1,125 @@
+{
+  "generated_at_utc": "2026-09-21T08:17:30.352753+00:00",
+  "git_commit": "cf28018d8d074abf4d35fb489d8a11b5bfccd29f",
+  "git_dirty": true,
+  "all_checks_pass": true,
+  "checks": {
+    "rq1_valor_coverage_100": true,
+    "rq1_valor_exposure_bounded": true,
+    "rq2_methods_present": true,
+    "rq2_full_valor_coverage_100": true,
+    "rq2_full_valor_exposure_bounded": true,
+    "rq5_all_correct": true,
+    "concurrency_all_pass": true,
+    "concurrency_no_violations": true,
+    "e6_cumulative_rejection_correct": true,
+    "e7_all_lifecycle_correct": true,
+    "e7_all_conservation": true,
+    "e8_baseline_100": true,
+    "e8_recovery_monotone": true
+  },
+  "config": {
+    "path": "config\\experiment.yaml",
+    "sha256": "c8fbcd869657efcb4e13560397b17e74f5311bf2e916e0b17e4dd7064a766cbf"
+  },
+  "environment": {
+    "platform": "Windows-11-10.0.26100-SP0",
+    "system": "Windows",
+    "release": "11",
+    "machine": "AMD64",
+    "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+    "python": "3.13.9",
+    "sqlite": "3.51.0",
+    "cpu_count": 16,
+    "timer": "time.perf_counter_ns",
+    "steady_state_sqlite": {
+      "journal_mode": "wal",
+      "synchronous_numeric": 2
+    },
+    "steady_state_definition": "SQLite connection and PRAGMA configuration are completed before the measured per-action issuance interval.",
+    "cold_connect_definition": "Measured issuance uses the general SQLite ledger whose per-operation path opens and configures a connection.",
+    "benchmark_reset_note": "Synthetic ledger reset occurs between independent successful trials and outside the measured issuance interval. It is not a runtime VALOR authority reset."
+  },
+  "result_files": {
+    "results\\tables\\rq1_summary.csv": {
+      "sha256": "163d7346fda469e09d8ec40cb2cabfbda0719256da283ca823c6e4fbea6a0bb1",
+      "size_bytes": 693
+    },
+    "results\\tables\\rq2_ablation_summary.csv": {
+      "sha256": "2327909e531fc92b010d9ec05bb678c26b26dc702b2eda9431481047bfcaa051",
+      "size_bytes": 443
+    },
+    "results\\tables\\rq3_latency_summary.csv": {
+      "sha256": "b99a704757e174638ae2e4f4a838833bc388e5e88fa376d9c6bea4cf908ed734",
+      "size_bytes": 469
+    },
+    "results\\raw\\rq3_environment.json": {
+      "sha256": "8f497c92f768b8239084f5e0bbe6907ba4754e06e03040c0b299a2e48b1961e9",
+      "size_bytes": 844
+    },
+    "results\\tables\\rq4_summary.csv": {
+      "sha256": "8fcf7326d6d72fddef4e42e9a72c922a6c56a7566678ee5b1a7a4584018e55fd",
+      "size_bytes": 445
+    },
+    "results\\tables\\rq5_summary.csv": {
+      "sha256": "2274820fd58b23a3e7dc029f38dac66d114208bf8effb87302a75c1280d4e2bc",
+      "size_bytes": 144
+    },
+    "results\\tables\\rq5_by_mode.csv": {
+      "sha256": "aad12ce008ca96f83ae7152e01da02d6c2e9502e248e9bc5cce8dbc767704828",
+      "size_bytes": 165
+    },
+    "results\\tables\\concurrency_summary.csv": {
+      "sha256": "c794731fe92c6aecc3732c21faa2bef05b4a36a7cf4617f3c09e06765af33185",
+      "size_bytes": 248
+    },
+    "results\\tables\\e6_cumulative_exhaustion_summary.csv": {
+      "sha256": "56a17fd4f7f32fb1a601389e44e9a0e0545c9aebf13a95980052b2106190448a",
+      "size_bytes": 270
+    },
+    "results\\tables\\e6_cumulative_exhaustion_by_dimension.csv": {
+      "sha256": "4d4d83f48bda5831ae90dde2497a71a9fefd29cf7b2a8d37631e031f3ba47cf9",
+      "size_bytes": 211
+    },
+    "results\\tables\\e7_state_drift_summary.csv": {
+      "sha256": "c0d2685ea3f2d4b8b8a6ef2c4fc7ada7a6c5271fe6b640b10e2a9469df709214",
+      "size_bytes": 330
+    },
+    "results\\tables\\e7_abort_properties.csv": {
+      "sha256": "a15c8fbd9a910f3ae8889008fcd160611409158e62f84ff749b0a6d9b690eb75",
+      "size_bytes": 92
+    },
+    "results\\tables\\e8_attack_then_emergency_summary.csv": {
+      "sha256": "4d328e3c5fbc9997cb65e3634e2490667ee357cc9ede36cb97d701bde6c19bb8",
+      "size_bytes": 1655
+    },
+    "results\\figures\\e6_cumulative_exhaustion.png": {
+      "sha256": "698be210598b694ad62d5ee299c7317ca13b6d5b67c87ed16806f8c7718f43ea",
+      "size_bytes": 38574
+    },
+    "results\\figures\\e8_attack_then_emergency.png": {
+      "sha256": "7a90400c207285d99296a0d901adb6b61dada9d61971c74d2b74a7bd3f0e60a2",
+      "size_bytes": 64796
+    },
+    "results\\figures\\rq1_coverage.png": {
+      "sha256": "9bdf66473a799a7cfea8d4d19fcffa59784d3c19dc2c1241820abc183a127f85",
+      "size_bytes": 60009
+    },
+    "results\\figures\\rq2_coverage_ablation.png": {
+      "sha256": "526b94859092f47bbfa2baaec15b05042646eb3887de2c048238fb80c558fa00",
+      "size_bytes": 45516
+    },
+    "results\\figures\\rq2_exposure_ablation.png": {
+      "sha256": "9db905458af304dcedfbd9670ee7db5bdda4ea0dd4408f226e433156726c4971",
+      "size_bytes": 57000
+    },
+    "results\\figures\\rq3_latency.png": {
+      "sha256": "5ae409dc9d03712f0f20d05c5ff3cf8d9833138258832655e4d3006784bfa909",
+      "size_bytes": 64979
+    },
+    "results\\figures\\rq4_bad_adapter.png": {
+      "sha256": "76d47ed4ee92a996bfc389723bf1d1de5f9467e63bfa1fdb94abd0228b7f6726",
+      "size_bytes": 65802
+    }
+  }
+}

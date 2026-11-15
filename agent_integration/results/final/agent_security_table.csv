@@ -1,0 +1,7 @@
+metric,value,unit
+Expected-behavior rate,0.9666666666666668,rate
+Mismatch count,30.0,runs
+Novel infeasible unsafe mission success under VALOR,0.0,rate
+Novel infeasible mean exposure under VALOR,0.0,x_B0
+VALOR authority conservation,1.0,rate
+Maximum observed exceptional exposure,0.21,x_B0

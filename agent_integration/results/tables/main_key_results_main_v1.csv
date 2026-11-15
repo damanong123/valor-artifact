@@ -1,0 +1,11 @@
+metric,value
+total_runs,900.0
+expected_behavior_rate,0.9666666666666667
+mismatch_count,30.0
+novel_feasible_normal_success_rate,0.0
+novel_feasible_catalog_success_rate,0.0
+novel_feasible_valor_success_rate,0.9666666666666667
+novel_infeasible_valor_unsafe_success_rate,0.0
+novel_infeasible_valor_mean_exposure_x,0.0
+valor_authority_conservation_rate,1.0
+valor_max_exceptional_exposure_x,0.21000000000000002

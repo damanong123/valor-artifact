@@ -1,0 +1,5 @@
+classification,count,fraction
+other_expected_behavior_mismatch,16,0.5333333333333333
+planner_or_execution_failure_without_denial,10,0.3333333333333333
+planner_max_steps_without_completion,3,0.1
+authorization_or_replanning_failure_after_denial,1,0.03333333333333333

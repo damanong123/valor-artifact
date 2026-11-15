@@ -1,0 +1,25 @@
+{
+  "main_run_label": "main_v1",
+  "attack_run_label": "attack_main_v1",
+  "main_gates_pass": true,
+  "attack_main_gates_pass": true,
+  "source_files": {
+    "agent_integration/results/tables/main_analysis_main_v1.csv": "b346bc84f0ef12d03de8606e793b3cf42f34d0ff9c159793e4dbed656219ea6b",
+    "agent_integration/results/tables/main_key_results_main_v1.csv": "193ad3489cbf0255227884727380a013209a442c36239973fee8cb0950ede59c",
+    "agent_integration/results/tables/main_gates_main_v1.json": "cfc29d6dcb2e7ac76786da77f7ff2e8ad4c0a14b6ebadd949e550015ba71065a",
+    "agent_integration/results/tables/attack_main_analysis_attack_main_v1.csv": "eeead9e2ee89e5b51c1338410c3fbab4f3bf3d290cef2fcaea5df32ae10dbb77",
+    "agent_integration/results/tables/attack_main_policy_attack_main_v1.csv": "acef085cf7e83cb91442ab38a41dc1e0aaae2313dc3a62882776a6f2f86d7645",
+    "agent_integration/results/tables/attack_main_key_results_attack_main_v1.csv": "500d9ca69f87cbea38697afd852f55f125c5a1fa6c1e6f0fc7275acbccd8c055",
+    "agent_integration/results/tables/attack_main_gates_attack_main_v1.json": "efc0aa55c2d2acb51d19b5d0bdeb46531c81c82d0e9e7252fc5aa10f27db51ba",
+    "agent_integration/results/tables/main_mismatch_breakdown_refined_main_v1.csv": "c6cee8216a3d634813b0cc44a0446441b3feb896fe0e39314e16a4cb51f9db0d"
+  },
+  "output_files": {
+    "agent_integration/results/final/agent_capability_table.csv": "16814e5db89bf87e11e0d86c296c7c291dd4503a4fdf51429cbd88080f1a9723",
+    "agent_integration/results/final/agent_security_table.csv": "74bfc4b6977e6e5fade2edb880269b09639f9c506f37da3b4aee15180bad3538",
+    "agent_integration/results/final/agent_attack_table.csv": "1ac8a8aacf1c44fc0db3e30afd51b2fc42d090b2d9cab85c1ee274b3e7176540",
+    "agent_integration/results/final/agent_final_key_results.csv": "8ee9215c70290c55befc6d9c2b24c4283331de9591a118f0337acf9ee5fee186",
+    "agent_integration/results/final/AGENT_EXPERIMENT_RESULTS.md": "99cff3d3defa5bfff51b2f1e71a911fe8c5d327e60635bdd928671378cc91cd1",
+    "agent_integration/results/figures/agent_main_completion.png": "444329e4db48f64d20b6d8a5124742b1225a4d6f53ab73921fbe46abe0547ba1",
+    "agent_integration/results/figures/agent_attack_goal_rate.png": "86a694f9d14812b5eb4a9b28213d0770befb710d2b75840532f2b49b9b64a817"
+  }
+}

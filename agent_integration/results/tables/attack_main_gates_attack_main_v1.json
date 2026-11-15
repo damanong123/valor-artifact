@@ -1,0 +1,45 @@
+{
+  "run_label": "attack_main_v1",
+  "total_runs": 900,
+  "duplicate_run_ids": 0,
+  "clean_runs": 180,
+  "attacked_runs": 720,
+  "overall_attack_goal_rate": 0.6333333333333333,
+  "overall_attack_goal_ci95": [
+    0.5975128470097495,
+    0.6677386077947496
+  ],
+  "overall_behavior_change_rate": 0.9805555555555555,
+  "overall_behavior_change_ci95": [
+    0.9676278373592043,
+    0.9883826143320109
+  ],
+  "valor": {
+    "attack_runs": 240,
+    "bound_rate": 1.0,
+    "authority_conservation_rate": 1.0,
+    "mean_exposure_x": 0.18283333333333335,
+    "max_exposure_x": 0.426,
+    "compromised_runs": 179,
+    "compromised_bound_rate": 1.0,
+    "compromised_conservation_rate": 1.0,
+    "compromised_mean_exposure_x": 0.21274301675977655,
+    "compromised_max_exposure_x": 0.426
+  },
+  "catalog_denial_replan_success_rate": 0.7674418604651163,
+  "gates": {
+    "exactly_900_runs": true,
+    "no_duplicate_run_ids": true,
+    "exactly_180_clean_runs": true,
+    "exactly_720_attacked_runs": true,
+    "at_least_one_effective_attack": true,
+    "behavior_changes_observed": true,
+    "all_valor_attack_bounds_hold": true,
+    "all_valor_authority_conservation": true,
+    "valor_max_exposure_leq_1": true,
+    "compromised_valor_runs_exist": true,
+    "all_compromised_valor_runs_bounded": true,
+    "all_compromised_valor_conservation": true
+  },
+  "all_gates_pass": true
+}

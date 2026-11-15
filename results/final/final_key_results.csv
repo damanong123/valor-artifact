@@ -1,0 +1,81 @@
+experiment,setting,metric,value,unit
+RQ1,K=10,union_coverage,13.428571428571429,percent
+RQ1,K=10,valor_coverage,100.0,percent
+RQ1,K=10,union_exposure,11.575500619091931,x_reserve
+RQ1,K=10,valor_exposure,0.9855248116349952,x_reserve
+RQ1,K=25,union_coverage,31.2,percent
+RQ1,K=25,valor_coverage,100.0,percent
+RQ1,K=25,union_exposure,12.136398080056022,x_reserve
+RQ1,K=25,valor_exposure,0.9855248116349952,x_reserve
+RQ1,K=50,union_coverage,55.65217391304348,percent
+RQ1,K=50,valor_coverage,100.0,percent
+RQ1,K=50,union_exposure,12.567581403026947,x_reserve
+RQ1,K=50,valor_exposure,0.9855248116349952,x_reserve
+RQ1,K=100,union_coverage,74.01818181818183,percent
+RQ1,K=100,valor_coverage,100.0,percent
+RQ1,K=100,union_exposure,13.226534648146508,x_reserve
+RQ1,K=100,valor_exposure,0.9855248116349952,x_reserve
+RQ2,Union Catalog,coverage,55.65217391304348,percent
+RQ2,Union Catalog,exposure,12.567581403026947,x_reserve
+RQ2,Catalog + Reserve,coverage,55.65217391304348,percent
+RQ2,Catalog + Reserve,exposure,0.988053371463378,x_reserve
+RQ2,Envelope Only,coverage,100.0,percent
+RQ2,Envelope Only,exposure,13.793559942236318,x_reserve
+RQ2,Full VALOR,coverage,100.0,percent
+RQ2,Full VALOR,exposure,0.9855248116349952,x_reserve
+RQ3,Capability verification,median_us,10.6,microseconds
+RQ3,Capability verification,p95_us,10.9,microseconds
+RQ3,Capability verification,p99_us,14.501000000000024,microseconds
+RQ3,In-memory issuance,median_us,28.9,microseconds
+RQ3,In-memory issuance,p95_us,34.0,microseconds
+RQ3,In-memory issuance,p99_us,52.0,microseconds
+RQ3,Ed25519 verification,median_us,87.6,microseconds
+RQ3,Ed25519 verification,p95_us,91.1,microseconds
+RQ3,Ed25519 verification,p99_us,123.2040000000001,microseconds
+RQ3,SQLite steady-state issuance,median_us,756.15,microseconds
+RQ3,SQLite steady-state issuance,p95_us,4968.484999999999,microseconds
+RQ3,SQLite steady-state issuance,p99_us,6118.863000000017,microseconds
+RQ3,SQLite cold-connect issuance,median_us,8039.8,microseconds
+RQ3,SQLite cold-connect issuance,p95_us,15648.49,microseconds
+RQ3,SQLite cold-connect issuance,p99_us,22387.188,microseconds
+RQ4,30% energy underestimation,declared_exposure_mean,0.914890799539412,x_reserve
+RQ4,30% energy underestimation,true_exposure_mean,0.964144666008339,x_reserve
+RQ4,30% energy underestimation,declared_energy_x_mean,0.4701660655933639,x_reserve
+RQ4,30% energy underestimation,true_energy_x_mean,0.67166580799052,x_reserve
+RQ4,30% energy underestimation,declared_safe_rate,1.0,rate
+RQ4,30% energy underestimation,true_safe_rate,0.6,rate
+RQ4,30% energy underestimation,physical_violation_rate,0.4,rate
+RQ5,Feasible (admit),correctly_handled,100.0,percent
+RQ5,Ground-truth infeasible (reject),correctly_handled,100.0,percent
+Concurrency,Concurrent reservation,successes,1500.0,count
+Concurrency,Concurrent reservation,violations,0.0,count
+Concurrency,Concurrent replay Execute,successes,1.0,count
+Concurrency,Concurrent replay Execute,violations,0.0,count
+Concurrency,Concurrent double Commit,successes,1.0,count
+Concurrency,Concurrent double Commit,violations,0.0,count
+E6,Cumulative exhaustion,correct_rejection_rate,1.0,rate
+E6,Cumulative exhaustion,individually_admissible_rate,1.0,rate
+E6,Cumulative exhaustion,inside_envelope_rate,1.0,rate
+E6,Cumulative exhaustion,cumulative_rejection_rate,1.0,rate
+E7,stable,correct_rate,1.0,rate
+E7,lower_effect,correct_rate,1.0,rate
+E7,higher_effect,correct_rate,1.0,rate
+E7,hard_guard_failure,correct_rate,1.0,rate
+E8,requested_attack_steps=0,attack_exposure,0.0,x_reserve
+E8,requested_attack_steps=0,recovery_admission,100.0,percent
+E8,requested_attack_steps=1,attack_exposure,0.5517423976894527,x_reserve
+E8,requested_attack_steps=1,recovery_admission,89.2,percent
+E8,requested_attack_steps=2,attack_exposure,0.824439253064505,x_reserve
+E8,requested_attack_steps=2,recovery_admission,65.93333333333332,percent
+E8,requested_attack_steps=3,attack_exposure,0.8825369292154905,x_reserve
+E8,requested_attack_steps=3,recovery_admission,61.0,percent
+E8,requested_attack_steps=4,attack_exposure,0.8914981865019701,x_reserve
+E8,requested_attack_steps=4,recovery_admission,48.2,percent
+E8,requested_attack_steps=5,attack_exposure,0.94807547515009,x_reserve
+E8,requested_attack_steps=5,recovery_admission,20.266666666666666,percent
+E8,requested_attack_steps=6,attack_exposure,0.980630668855002,x_reserve
+E8,requested_attack_steps=6,recovery_admission,1.2,percent
+E8,requested_attack_steps=7,attack_exposure,0.9855248116349952,x_reserve
+E8,requested_attack_steps=7,recovery_admission,0.6,percent
+E8,requested_attack_steps=8,attack_exposure,0.9855248116349952,x_reserve
+E8,requested_attack_steps=8,recovery_admission,0.6,percent

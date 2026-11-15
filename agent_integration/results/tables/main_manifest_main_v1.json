@@ -1,0 +1,16 @@
+{
+  "run_label": "main_v1",
+  "instances_per_class": 20,
+  "repetitions": 3,
+  "max_steps": 10,
+  "task_manifest_sha256": "f69454b8a4d881a6b09051dec3df9699686de4b02c29cecec97cfacbee821d51",
+  "policies": [
+    "normal_only",
+    "catalog",
+    "valor"
+  ],
+  "task_class_filter": null,
+  "model": "qwen3-8b",
+  "temperature": 0.7,
+  "enable_thinking": false
+}

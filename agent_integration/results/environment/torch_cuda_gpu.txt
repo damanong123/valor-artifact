@@ -1,0 +1,3 @@
+torch= 2.13.0+cu132
+cuda= 13.2
+gpu= NVIDIA GeForce RTX 5090

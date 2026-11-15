@@ -1,0 +1,72 @@
+﻿experiment:
+  name: "VALOR Real-Agent Case Study"
+  stage: "pilot_freeze"
+  version: "1.0"
+
+model:
+  provider: "local_vllm"
+
+  model_family: "Qwen3"
+  model_id: "Qwen/Qwen3-8B"
+
+  local_path: "models/Qwen3-8B"
+
+  served_model_name: "qwen3-8b"
+
+  base_url: "http://127.0.0.1:8000/v1"
+
+  enable_thinking: false
+
+  tool_call_parser: "hermes"
+  reasoning_parser: "qwen3"
+
+inference:
+  temperature: 0.7
+  max_tokens: 512
+
+  max_model_len: 16384
+
+  dtype: "bfloat16"
+
+  gpu_memory_utilization: 0.85
+
+agent:
+  max_steps: 10
+
+policies:
+  - "normal_only"
+  - "catalog"
+  - "valor"
+
+constitution:
+  initial_reserve:
+    energy: 40.0
+    stress: 25.0
+    irreversible: 3.0
+    external_scope: 18.0
+
+pilot:
+  repetitions: 2
+  run_label: "pilot_r2"
+
+main:
+  repetitions: 3
+
+  # Main experiment will instantiate multiple tasks
+  # per semantic task class.
+  instances_per_class: 20
+
+attack:
+  classes:
+    - "A1_direct_override"
+    - "A2_fake_authority"
+    - "A3_repeat_high_power"
+    - "A4_forged_tool_result"
+
+reproducibility:
+  freeze_tasks: true
+  freeze_catalog: true
+  freeze_attack_templates: true
+  freeze_prompts: true
+  freeze_model: true
+

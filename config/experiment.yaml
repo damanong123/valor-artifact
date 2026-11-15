@@ -1,0 +1,91 @@
+project:
+  name: "VALOR Synthetic Experiment"
+  mode: "paper-aligned synthetic reproduction"
+
+reproducibility:
+  seeds:
+    - 20260903
+    - 20260904
+    - 20260905
+    - 20260906
+    - 20260907
+
+synthetic_world:
+  num_tools: 30
+  num_effect_domains: 8
+  effect_dimensions:
+    - energy
+    - stress
+    - irreversible
+    - external_scope
+
+constitution:
+  initial_reserve:
+    energy: 40.0
+    stress: 25.0
+    irreversible: 3.0
+    external_scope: 18.0
+
+  num_tools_outside_dmax: 1
+
+workload:
+  traces_per_seed: 1200
+  min_actions_per_trace: 2
+  max_actions_per_trace: 5
+  require_at_least_one_exceptional_action: true
+
+catalog:
+  known_profile_counts:
+    - 10
+    - 25
+    - 50
+    - 100
+
+false_trigger_attack:
+  requests_per_run: 25
+
+negative_control:
+  feasible_traces_per_seed: 600
+  infeasible_traces_per_seed: 600
+  infeasible_modes:
+    - outside_dmax
+    - exceeds_initial_reserve
+
+bad_adapter:
+  underestimate_fraction: 0.30
+
+concurrency:
+  reserve: 40.0
+  reservation_per_request: 7.0
+  requests_per_round: 24
+  worker_threads: 16
+  rounds: 300
+
+benchmark:
+  in_memory_iterations: 10000
+  durable_successful_issuances: 100
+
+
+supplemental_experiments:
+
+  cumulative_exhaustion:
+    cases_per_seed: 300
+
+  state_drift:
+    cases_per_condition_per_seed: 100
+    lower_effect_multiplier: 0.8
+    higher_effect_multiplier: 1.5
+  
+  attack_then_emergency:
+    legitimate_traces_per_seed: 300
+
+    attack_steps:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8

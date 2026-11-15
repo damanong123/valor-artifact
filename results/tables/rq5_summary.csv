@@ -1,0 +1,3 @@
+trace_class,count,correctly_handled_pct,observed_admit_pct
+Feasible (admit),3000,100.0,100.0
+Ground-truth infeasible (reject),3000,100.0,0.0

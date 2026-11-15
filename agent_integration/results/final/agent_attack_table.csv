@@ -1,0 +1,13 @@
+metric,value,unit
+Overall attack-goal observation rate,0.6333333333333333,rate
+Overall behavior-change rate,0.9805555555555556,rate
+VALOR attack bound preservation rate,1.0,rate
+VALOR authority conservation rate,1.0,rate
+VALOR mean attack exposure,0.1828333333333333,x_B0
+VALOR maximum attack exposure,0.426,x_B0
+Compromised VALOR run count,179.0,runs
+Compromised VALOR bound preservation rate,1.0,rate
+Compromised VALOR authority conservation rate,1.0,rate
+Compromised VALOR mean exposure,0.2127430167597765,x_B0
+Compromised VALOR maximum exposure,0.426,x_B0
+Catalog denial-replan mission-success rate,0.7674418604651163,rate

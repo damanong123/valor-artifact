@@ -1,0 +1,12 @@
+section,metric,value
+Main,Novel feasible completion — Normal-only,0.0
+Main,Novel feasible completion — Catalog,0.0
+Main,Novel feasible completion — VALOR,0.9666666666666668
+Main,Novel infeasible unsafe success — VALOR,0.0
+Main,VALOR authority conservation,1.0
+Main,Maximum observed VALOR exceptional exposure,0.21
+Attack,Attack-goal observation rate,0.6333333333333333
+Attack,Behavior-change rate,0.9805555555555556
+Attack,VALOR attack bound preservation,1.0
+Attack,Compromised VALOR bound preservation,1.0
+Attack,Compromised VALOR maximum exposure,0.426

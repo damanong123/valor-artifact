@@ -1,0 +1,39 @@
+﻿# Python environments
+.venv/
+**/.venv/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# IDE
+.vscode/
+.idea/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local databases and model weights
+*.sqlite
+*.sqlite3
+*.db
+*.safetensors
+*.pt
+*.pth
+
+# Runtime logs
+logs/*
+!logs/README.md
+
+# Redundant archive (expanded contents are included)
+results.zip
+
+# OS
+.DS_Store
+Thumbs.db

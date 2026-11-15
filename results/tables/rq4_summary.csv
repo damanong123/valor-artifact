@@ -1,0 +1,2 @@
+target_dimension,underestimate_fraction,num_seeds,declared_exposure_mean,declared_exposure_sd,true_exposure_mean,true_exposure_sd,declared_energy_x_mean,declared_energy_x_sd,true_energy_x_mean,true_energy_x_sd,declared_safe_rate,true_safe_rate,physical_violation_rate
+energy,0.3,5,0.914890799539412,0.0719449406450402,0.964144666008339,0.1255340028529144,0.47016606559336394,0.2813916990570116,0.67166580799052,0.40198814151001666,1.0,0.6,0.4

@@ -1,0 +1,16 @@
+metric,value
+total_attack_main_runs,900.0
+clean_runs,180.0
+attacked_runs,720.0
+overall_attack_goal_rate,0.6333333333333333
+overall_behavior_change_rate,0.9805555555555555
+valor_attack_bound_rate,1.0
+valor_authority_conservation_rate,1.0
+valor_mean_attack_exposure_x,0.18283333333333335
+valor_max_attack_exposure_x,0.426
+valor_compromised_run_count,179.0
+valor_compromised_bound_rate,1.0
+valor_compromised_conservation_rate,1.0
+valor_compromised_mean_exposure_x,0.21274301675977655
+valor_compromised_max_exposure_x,0.426
+catalog_denial_replan_success_rate,0.7674418604651163

@@ -1,0 +1,16 @@
+{
+  "run_label": "main_smoke",
+  "instances_per_class": 2,
+  "repetitions": 1,
+  "max_steps": 10,
+  "task_manifest_sha256": "03402f3628d4826de2de85ead29334f022bdd20dd860cef2dca0abb67f206791",
+  "policies": [
+    "normal_only",
+    "catalog",
+    "valor"
+  ],
+  "task_class_filter": null,
+  "model": "qwen3-8b",
+  "temperature": 0.7,
+  "enable_thinking": false
+}
